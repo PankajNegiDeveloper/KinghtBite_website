@@ -1,0 +1,710 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.appbar{
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid black; */
+    /* background-color: black; */
+    background: rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo{
+    width: 7%;
+    height: 90px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_img{
+    /* border: 1px solid white; */
+    width: 3%;
+    height: 40px;
+    background: url(./Assets_images/kb_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    
+}
+
+.app_bar_para{
+    font-size: 1.15rem; 
+    color: white;
+}
+
+.midbar{
+    width: 32%;
+    /* border: 1px solid black; */
+}
+
+.appbar_list{
+    display: inline;
+    color: white;
+    margin-right: 35px;
+    margin-left: 35px;
+    font-size: 1.15rem;   
+}
+
+.appbar_list:hover{
+    color: purple;
+}
+
+.nav_items{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10em;
+}
+
+.app_link{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-image: url('https://knight-bite.com/res/index/app-link-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.delecious_link{
+    width: 100%;
+    /* border: 1px solid white; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12em;
+}
+
+h2{
+    color: white;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4.5em;
+}
+
+/* .button_container{
+    border: 1px solid pink;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */   
+
+.button_container1{
+    /* border: 1px solid white; */
+    border-radius: 7px;
+    background-color: #FF5672;;
+    width: 13%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button_container1 p{
+    font-family: "Sofadi One", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.button_container2{
+    /* border: 1px solid white; */
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container2 p{
+    font-size: 1.4em;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.stores_container{
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appstore {
+    /* border: 1px solid pink; */
+    padding: 15px;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.playstore{
+    /* border: 1px solid pink; */
+    padding: 7px;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.appstore_img, .playstore_img{
+    width: 100%;
+    height: 100%;
+}
+
+.appstore_img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.playstore_img:hover{
+    transform: scale(1.07);
+    transition-duration: 1s;
+}
+
+.features{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
+
+.features_header{
+    /* border: 1px solid black; */
+    padding: 30px;
+}
+
+.features_header, h3{
+    color: #424242;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.feature_grid{
+    /* border: 1px solid pink; */
+    display: grid;
+    /* height: 500px; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(170px, 270px));
+    column-gap: 2rem;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.feature_container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature_description{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_description pre{
+    font-size: 16px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.feature_container img{
+    width: 100%;
+}
+
+.man_container{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 150vh;
+    background-image: url(https://knight-bite.com/res/index/banner-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man_container p{
+    color: white;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4.5em;
+    margin-top: 2em;
+}
+
+.man2_container{
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://knight-bite.com/res/index/banner-2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.man2_container p{
+    color: white;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4em;
+    line-height: 55px;
+    /* margin-top: 2em; */
+}
+
+.man2_container button{
+    border: 1px solid white;
+    position: absolute;
+    bottom: 4rem;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 25px;
+    height: 8%;
+    width: 15%;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding-top: 14px;
+}
+
+.man2_container button:hover{
+    cursor: pointer;
+}
+
+.connect_with_us{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect_with_us h3{
+    color: #424242;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 25px;
+}
+
+.info_grid, p, li{
+    color: black;
+}
+
+.info_grid{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;   
+    padding: 1.6rem;
+    background-color: #fafafa;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+}
+
+.gridcolumn{
+    /* border: 1px solid black; */
+    height: 16rem;
+    /* width: 25rem; */
+}
+
+/*******************************************/
+.contact_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact_us_heading{
+    padding-top: 1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: normal;
+    color: #424242;
+}
+
+.contact_us_upper{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+}
+
+.message{
+    /* border: 1px solid black; */
+    background: url(./Assets_images/message.png.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.msg_info{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 60%;
+}   
+
+.contact_us_lower{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+}
+
+.phone{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 100%;
+    background: url(./Assets_images/call_icon.png);
+    height: 47px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.phone_info{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 40%;
+    margin-top: -1.5em;
+}
+
+/*******************************************/
+
+.quick_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.quick_links_heading{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: normal;
+    color: #424242;
+
+}
+
+.contact_items{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.contact_items li{
+    line-height: 2em;
+}
+
+/*******************************************/
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.data_info{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 1em;
+    line-height: 2em;
+}
+
+.data_email input{
+    /* border: 1px solid black; */
+    padding: 1.5em;
+    border-radius: 30px;
+    width: 25em;
+    border-color: #FF5672;
+}
+
+.data_email input::placeholder{
+    font-size: 18px;
+}
+
+/*******************************************/
+
+.headoffice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.headoffice_heading{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: normal;
+    color: #424242;
+}
+
+.headoffice_info{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 2em;
+    line-height: 1.9em;
+    /* padding: 30px; */
+}
+
+/*******************************************/
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.location_heading{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: normal;
+    color: #424242;
+}
+
+.location_info{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 1em;
+    line-height: 1.9em;
+}
+
+/*******************************************/
+
+.follow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+}
+
+.follow_heading{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: normal;
+    color: #424242;
+}
+
+.follow_icons{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow_container{
+    /* border: 1px solid black; */
+    width: 13%;
+    height: 50%;
+    margin: 8px;
+    align-items: flex-end;
+}
+
+.insta{
+    background: url(./Assets_images/instagram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fb{
+    background: url(./Assets_images/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.in{
+    background: url(./Assets_images/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.youtube{
+    background: url(./Assets_images/youtube.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    margin-top: 18px;
+}
+
+/*******************************************/
+
+.delecious_link_text{
+    color: white;
+}
+
+/*******************************************/
+
+.info_grid, ul, li, p{
+    font-size: 18px;
+    color: #424242;
+}
+
+.contact_list_items{
+    color: #ff5672;
+}
+
+/*******************************************/
+
+.logo_footer{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1em; */
+    padding: 30px;
+}
+
+.logo_footer_icon1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 40px;
+    background: url(./Assets_images/brand_logo-1_footer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    margin-left: 3.5rem;
+}
+
+.logo_footer_icon2{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 40px;
+    background: url(./Assets_images/kb_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.footer{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+    background: linear-gradient(90deg,#C77BF4 0%,#FF5672 100%);
+    box-shadow: 0px -8px 15px 0px rgba(0,0,0,0.34);
+}
+
+.footer_text{
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/* ************************************ */
+
+.insta, .fb, .in, .youtube {
+    transform:
+      rotateX(40deg)
+      rotateZ(30deg);
+    transform-style: preserve-3d;
+    border-radius: 32px;
+    box-shadow:
+      1px 1px 0 1px #f9f9fb,
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition:
+      .4s ease-in-out transform,
+      .4s ease-in-out box-shadow;
+  
+    &:hover {
+      transform:
+        translate3d(0px, -16px, 0px)
+        rotateX(51deg)
+        rotateZ(43deg);
+      box-shadow:
+        1px 1px 0 1px #f9f9fb,
+        -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+    }
+  }
